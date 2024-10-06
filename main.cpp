@@ -40,9 +40,11 @@ int main()
 		std::cout << "Friend " << count.first << ": " << count.second << " letters" << std::endl;
 	}
 
-	// Pause the program to prevent the console window from closing immediately
+    	// Pause the program to prevent the console window from closing immediately
     	std::cout << "\nPress Enter to exit...";
-    	std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n'); // Wait for user to press Enter
+	std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n'); // Clear out the input buffer
+    	std::cin.get(); // Wait for the user to press Enter
+
     	return 0;
 	
 } // end main
